@@ -1,0 +1,47 @@
+{
+	"Name": "WildRP Remote",
+	"Version": "0.1.0.0",
+	"Author": "WildRP",
+	"Actions": [
+		{
+			"Name": "Send Command",
+			"UUID": "com.wildrp.wildrp-remote.send-command",
+			"Icon": "imgs/actions/counter/icon",
+			"Tooltip": "Sends a console command to the WildRP client.",
+			"PropertyInspectorPath": "wildrp-command.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/counter/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "WildRP Remote",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Send commands to your WildRP client using your Stream Deck.",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.5"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.15"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "com.wildrp.wildrp-remote"
+}
