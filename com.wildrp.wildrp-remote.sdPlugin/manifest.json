@@ -1,12 +1,13 @@
 {
 	"Name": "WildRP Remote",
-	"Version": "0.1.0.0",
+	"Version": "1.0.0.0",
 	"Author": "WildRP",
+	"URL": "https://wildrp.com",
 	"Actions": [
 		{
 			"Name": "Send Command",
 			"UUID": "com.wildrp.wildrp-remote.send-command",
-			"Icon": "imgs/actions/counter/icon",
+			"Icon": "imgs/actions/command/icon",
 			"Tooltip": "Sends a console command to the WildRP client.",
 			"PropertyInspectorPath": "wildrp-command.html",
 			"Controllers": [
@@ -14,14 +15,14 @@
 			],
 			"States": [
 				{
-					"Image": "imgs/actions/counter/key",
+					"Image": "imgs/actions/command/key",
 					"TitleAlignment": "middle"
 				}
 			]
 		}
 	],
-	"Category": "WildRP Remote",
-	"CategoryIcon": "imgs/plugin/category-icon",
+	"Category": "WildRP",
+	"CategoryIcon": "imgs/plugin/wrp_vector_white",
 	"CodePath": "bin/plugin.js",
 	"Description": "Send commands to your WildRP client using your Stream Deck.",
 	"Icon": "imgs/plugin/marketplace",
@@ -30,10 +31,6 @@
 		"MinimumVersion": "6.5"
 	},
 	"OS": [
-		{
-			"Platform": "mac",
-			"MinimumVersion": "10.15"
-		},
 		{
 			"Platform": "windows",
 			"MinimumVersion": "10"

@@ -1,5 +1,7 @@
 # WildRP Remote for Stream Deck
 
+This plugin allows you to run commands (like `/me`, `/pvp`, etc.) on WildRP without using the in-game chat box.
+
 See the [Stream Deck SDK](https://github.com/elgatosf/streamdeck) GitHub.
 
 Requires Node.js v20.5.1+.
