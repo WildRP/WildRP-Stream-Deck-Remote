@@ -8,7 +8,11 @@ You can use this with `e [emote]` to perform an emote, `pvp` to toggle pvp, etc 
 
 ![Example usage](https://github.com/WildRP/WildRP-Stream-Deck-Remote/assets/162950/86e0b083-e3fa-4bea-9efe-bd7bdd6a5660)
 
-You can download the plugin and a preset example profile [from the Releases page](https://github.com/WildRP/WildRP-Stream-Deck-Remote/releases).
+You can download the plugin [from the Releases page](https://github.com/WildRP/WildRP-Stream-Deck-Remote/releases).
+
+## Attribution
+
+Dice and Play icon used for the command category list are from [Game-Icons.Net](https://game-icons.net).
 
 ## License
 
