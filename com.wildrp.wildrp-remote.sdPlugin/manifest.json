@@ -19,6 +19,33 @@
 					"TitleAlignment": "middle"
 				}
 			]
+		},
+		{
+			"Name": "Random Command",
+			"UUID": "com.wildrp.wildrp-remote.multi-command",
+			"Icon": "imgs/actions/random-command/icon",
+			"Tooltip": "Sends one of up to five random commands to the WildRP client.",
+			"PropertyInspectorPath": "wildrp-multi-command.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/random-command/key",
+					"TitleAlignment": "bottom",
+					"FontSize": 7
+				}
+			]
+		}
+	],
+	"Profiles": [
+		{
+			"Name": "profiles/WildRP.steamDeckProfile",
+			"DeviceType": 0
+		},
+		{
+			"Name": "profiles/WildRP.steamDeckProfile",
+			"DeviceType": 3
 		}
 	],
 	"Category": "WildRP",
