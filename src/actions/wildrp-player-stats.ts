@@ -90,13 +90,13 @@ export class WildRPPlayerStats extends SingletonAction<PlayerStatsSettings> {
 				view.horseHealth = true
 				pct = this._stats.horseHealth;
 				view.color = alive ? enabledColor : disabledColor;
-				if (pct < 20 && alive) view.color = lowColor;
+				if (pct < 20 && horseAlive) view.color = lowColor;
 				break;
 			case PlayerStats.horseStamina:
 				view.horseStamina = true;
 				pct = this._stats.horseStamina;
 				view.color = alive ? enabledColor : disabledColor;
-				if (pct < 20 && alive) view.color = lowColor;
+				if (pct < 20 && horseAlive) view.color = lowColor;
 				break;
 			case PlayerStats.showTelegramNotification:
 				view.telegram = true;
