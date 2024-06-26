@@ -1,6 +1,6 @@
 {
 	"Name": "WildRP Remote",
-	"Version": "1.0.0.0",
+	"Version": "1.1.0.0",
 	"Author": "WildRP",
 	"URL": "https://wildrp.com",
 	"Actions": [
@@ -32,6 +32,23 @@
 			"States": [
 				{
 					"Image": "imgs/actions/random-command/key",
+					"TitleAlignment": "bottom",
+					"FontSize": 7
+				}
+			]
+		},
+		{
+			"Name": "Player Stat Display",
+			"UUID": "com.wildrp.wildrp-remote.player-stats",
+			"Icon": "imgs/actions/random-command/icon",
+			"Tooltip": "Display the stats (health, stamina, etc.) of your character on your keys.",
+			"PropertyInspectorPath": "wildrp-player-stats.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/stats/icon_player_health",
 					"TitleAlignment": "bottom",
 					"FontSize": 7
 				}

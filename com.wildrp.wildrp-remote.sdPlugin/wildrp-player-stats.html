@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8" />
+        <script src="https://cdn.jsdelivr.net/gh/geekyeggo/sdpi-components@v2/dist/sdpi-components.js"></script>
+    </head>
+    <body>
+        <sdpi-item label="Stat">
+            <sdpi-select setting="statType" placeholder="Pick a stat to display...">
+				<optgroup label="Player">
+					<option value="playerHealth">Health</option>
+					<option value="playerStamina">Stamina</option>
+					<option value="playerHunger">Hunger</option>
+					<option value="playerThirst">Thirst</option>
+				</optgroup>
+				<optgroup label="Horse">
+					<option value="horseStamina">Stamina</option>
+					<option value="horseHealth">Health</option>
+				</optgroup>
+				<optgroup label="Misc.">
+					<option value="showTelegramNotification">Telegram Notification</option>
+				</optgroup>
+			</sdpi-select>
+        </sdpi-item>
+    </body>
+</html>
