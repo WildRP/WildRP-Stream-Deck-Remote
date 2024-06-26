@@ -1,0 +1,22 @@
+<svg width="250" height="250" viewBox="-31.25 -31.25 312.5 312.5" version="1.1" xmlns="http://www.w3.org/2000/svg" >
+<defs>
+  <style>
+	.a {
+	  fill: white;
+	}
+
+	.b{
+	  fill:#231f20;
+	}
+  </style>
+</defs>
+
+<g id="health" transform="scale(0.4) translate(135, 155)">
+<path class="a" d="M179.343,48.735C177.141,45.3,146.968-.015,93.57,0,57.084.011,22.984,21.182,8.446,49.385-28.637,121.327,67.463,227.6,83.173,244.974a354.385,354.385,0,0,0,96.17,74.727,354.372,354.372,0,0,0,96.171-74.727c15.71-17.374,111.81-123.647,74.727-195.589C335.7,21.182,301.6.011,265.117,0,211.719-.015,181.546,45.3,179.343,48.735Z"/>
+</g>
+
+<g class="progress" transform="translate(125 125) rotate(90) scale(1.1)">
+<circle r="115" cx="0" cy="0" stroke="#FFFFFFAA" stroke-width="24px" stroke-linecap="butt" stroke-dashoffset="722.2px" fill="transparent" stroke-dasharray="722.2px"></circle>
+<circle class="fill" r="115" cx="0" cy="0" stroke="white" stroke-width="24px" stroke-linecap="butt" stroke-dashoffset="0px" fill="transparent" stroke-dasharray="722.2px"></circle>
+</g>
+</svg>

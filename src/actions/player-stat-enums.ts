@@ -1,4 +1,4 @@
-export interface IPlayerStats {
+export interface IStreamDeckData {
     playerStamina:number,
     playerHealth:number,
     playerHunger:number,
@@ -10,10 +10,12 @@ export interface IPlayerStats {
     horseHealth:number,
     horseAlive:boolean,
     showTelegramNotification:boolean,
-    playerIsInPvp:boolean
+    playerIsInPvp:boolean,
+	isTalking:boolean,
+	voiceRangeIndex:number,
 }
 
-export enum PlayerStats {
+export enum StreamDeckStats {
 	playerStamina = "playerStamina",
     playerHealth = "playerHealth",
     playerHunger = "playerHunger",
@@ -25,7 +27,8 @@ export enum PlayerStats {
     horseHealth = "horseHealth",
     horseAlive = "horseAlive",
     showTelegramNotification = "showTelegramNotification",
-    playerIsInPvp = "playerIsInPvp"
+    playerIsInPvp = "playerIsInPvp",
+	micRangeIndicator = "micRangeIndicator",
 }
 
 export const PlayerStatSvg = `
@@ -89,8 +92,14 @@ export const PlayerStatSvg = `
 {{/horseStamina}}
 </g>
 
+{{#micRangeIndicator}}
+<g transform="scale(0.45) translate(170, 100)">
+<path class="a" d="M120.487,298.1c44.693-6.391,91.984-43.475,91.984-88.274V191.5a6.331,6.331,0,0,0-7.733-6.31l-.832.205a6.448,6.448,0,0,0-4.822,6.31v17.707c0,42.4-48.553,76.771-92.41,76.771H105.8c-43.857,0-92.41-34.372-92.41-76.771V191.709a6.448,6.448,0,0,0-4.822-6.31l-.832-.205A6.331,6.331,0,0,0,0,191.5v18.325c0,44.8,47.29,81.883,91.984,88.274a4.193,4.193,0,0,1,3.6,4.15v32.82a4.2,4.2,0,0,1-4.2,4.2H18.966a4.2,4.2,0,0,0-4.2,4.2v9.759a4.2,4.2,0,0,0,4.2,4.2H193.505a4.2,4.2,0,0,0,4.2-4.2v-9.759a4.2,4.2,0,0,0-4.2-4.2H121.083a4.2,4.2,0,0,1-4.2-4.2v-32.82A4.194,4.194,0,0,1,120.487,298.1Z"/><path class="a" d="M106.235,257.553h0A62.554,62.554,0,0,0,168.789,195v-8.574H150.437V167.366h18.352v-18.59H150.437V129.718h18.352V108.729H150.437V89.67h18.352V62.554A62.554,62.554,0,0,0,106.235,0h0A62.554,62.554,0,0,0,43.681,62.554V89.67H62.034v19.059H43.681v20.989H62.034v19.058H43.681v18.59H62.034v19.059H43.681V195A62.555,62.555,0,0,0,106.235,257.553Z"/>
+</g>
+{{/micRangeIndicator}}
+
 <g class="progress" transform="translate(125 125) rotate(90) scale(1.1)">
 <circle r="115" cx="0" cy="0" stroke="#FFFFFFAA" stroke-width="24px" stroke-linecap="butt" stroke-dashoffset="722.2px" fill="transparent" stroke-dasharray="722.2px"></circle>
-<circle class="fill" r="115" cx="0" cy="0" stroke="white" stroke-width="24px" stroke-linecap="butt" stroke-dashoffset="{{percent}}px" fill="transparent" stroke-dasharray="722.2px"></circle>
+<circle class="fill" r="115" cx="0" cy="0" stroke="{{strokeColor}}" stroke-width="24px" stroke-linecap="butt" stroke-dashoffset="{{percent}}px" fill="transparent" stroke-dasharray="722.2px"></circle>
 </g>
 </svg>`;

@@ -40,7 +40,7 @@
 		{
 			"Name": "Player Stat Display",
 			"UUID": "com.wildrp.wildrp-remote.player-stats",
-			"Icon": "imgs/actions/random-command/icon",
+			"Icon": "imgs/actions/stats/icon",
 			"Tooltip": "Display the stats (health, stamina, etc.) of your character on your keys.",
 			"PropertyInspectorPath": "wildrp-player-stats.html",
 			"Controllers": [
@@ -48,7 +48,23 @@
 			],
 			"States": [
 				{
-					"Image": "imgs/actions/stats/icon_player_health",
+					"Image": "imgs/actions/stats/icon",
+					"TitleAlignment": "bottom",
+					"FontSize": 7
+				}
+			]
+		},
+		{
+			"Name": "Compass Display",
+			"UUID": "com.wildrp.wildrp-remote.compass",
+			"Icon": "imgs/actions/compass/icon",
+			"Tooltip": "Displays which way your in-game camera is facing on a key.",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/compass/key",
 					"TitleAlignment": "bottom",
 					"FontSize": 7
 				}
