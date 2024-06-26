@@ -31,9 +31,7 @@
 			],
 			"States": [
 				{
-					"Image": "imgs/actions/random-command/key",
-					"TitleAlignment": "bottom",
-					"FontSize": 7
+					"Image": "imgs/actions/random-command/key"
 				}
 			]
 		},
@@ -48,9 +46,7 @@
 			],
 			"States": [
 				{
-					"Image": "imgs/actions/stats/icon",
-					"TitleAlignment": "bottom",
-					"FontSize": 7
+					"Image": "imgs/actions/stats/icon"
 				}
 			]
 		},
@@ -64,9 +60,7 @@
 			],
 			"States": [
 				{
-					"Image": "imgs/actions/compass/key",
-					"TitleAlignment": "bottom",
-					"FontSize": 7
+					"Image": "imgs/actions/compass/key"
 				}
 			]
 		}
