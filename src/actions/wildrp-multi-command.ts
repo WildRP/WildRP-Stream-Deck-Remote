@@ -16,15 +16,16 @@ export class WildrpMultiCommand extends SingletonAction<MultiCommandSettings> {
 		let cmds: Array<string> = []
 		let s = ev.payload.settings;
 
-		if (s.command1.length > 1) cmds.push(s.command1);
-		if (s.command2.length > 1) cmds.push(s.command2);
-		if (s.command3.length > 1) cmds.push(s.command3);
-		if (s.command4.length > 1) cmds.push(s.command4);
-		if (s.command5.length > 1) cmds.push(s.command5);
+		if (s.command1 && s.command1.length > 1) cmds.push(s.command1);
+		if (s.command2 && s.command2.length > 1) cmds.push(s.command2);
+		if (s.command3 && s.command3.length > 1) cmds.push(s.command3);
+		if (s.command4 && s.command4.length > 1) cmds.push(s.command4);
+		if (s.command5 && s.command5.length > 1) cmds.push(s.command5);
+
+
 
 		if (cmds.length > 0) {
 			var cmd = cmds[Math.floor(Math.random()*cmds.length)];
-
 			CommandServer.getInstance().sendCommand("COMMAND::"+cmd);
 		}
 	}
