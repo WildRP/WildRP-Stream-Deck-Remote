@@ -43,7 +43,8 @@ export default class CommandServer {
 		ws.on('message', (data) => {
 			if (data.toString() == "ping")
 				ws.send("PONG::Heartbeat");
-
+			else if (data.toString() == "HANDSHAKE")
+				ws.send("HANDSHAKE::SUCCESS");
 			else if (data.toString().startsWith("PLAYERSTATS")) {
 				let stats: IStreamDeckData = JSON.parse(data.toString().split("::")[1]);
 				WildRPPlayerStats.getInstance().setConnected(true);
